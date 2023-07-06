@@ -1,3 +1,7 @@
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+
 
 // Definição da estrutura de um nó da lista
 typedef struct No

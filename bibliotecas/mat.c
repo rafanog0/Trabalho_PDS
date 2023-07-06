@@ -1,3 +1,10 @@
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+#include<math.h>
+
+
+
 int ehPalindromo(char *);
 void inverterString(char *);
 int fatorial(int);

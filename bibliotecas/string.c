@@ -1,3 +1,8 @@
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+
+
 
 //Declarando escopo das funções
 int compararStrings(char *, char *);

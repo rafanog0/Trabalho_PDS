@@ -32,12 +32,8 @@ void importa_func(FILE *arquivo, char *biblioteca)
         printf("Erro ao abrir o arquivo.\n");
         exit(1);
     }
-
-    char linha[100];
-    while (fgets(linha, 100, funcoes) != NULL)
-    {
-        fprintf(arquivo, "%s", linha);
-    }
+    // Escreve no inicio do arquivo #include "strcat(path_bibliotecas, biblioteca)"
+    fprintf(arquivo, "#include \"%s\"\n", path_bibliotecas);
 
     fclose(funcoes);
 }
@@ -223,7 +219,7 @@ int main(int argc, char const *argv[])
     char nomeArquivo[100];
     printf("Escreva o nome do arquivo que terá as funções importadas:\n");
     scanf("%s", nomeArquivo);
-
+    
     FILE *arquivo = fopen(nomeArquivo, "r+");
     if (arquivo == NULL)
     {

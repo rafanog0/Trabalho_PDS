@@ -1,3 +1,8 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#include<unistd.h>
+#include<math.h>
 
 // Definição da estrutura de um nó da árvore
 typedef struct No
